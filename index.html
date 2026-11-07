@@ -3,425 +3,664 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LEON HOME | Architectural Real Estate &amp; Luxury Residences</title>
-  <meta name="description" content="Editorial luxury real estate and avant-garde architectural construction. Curated cliffside residences and private coastal villas engineered for distinction.">
+  <title>Roshani Enterprises: Luxury Real Estate and Bespoke Construction</title>
+  <meta name="description" content="Master-planned private estates, turnkey construction engineering, and generational architectural permanence by Roshani Enterprises.">
+
+  <!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./tokens.css">
-  <link rel="stylesheet" href="./base.css">
-  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <main class="site-main">
+  <!-- Page Framing Canvas -->
+  <div class="page-wrapper">
+    <main class="site-container">
 
-    <!-- =========================================================
-         SECTION 1: HERO SECTION (Layered 3D Depth)
-         ========================================================= -->
-    <header class="hero-wrapper" id="hero">
-      <div class="hero-container">
+      <!-- ===================================================================
+           1. HERO SECTION (1280x800 Screen-One Viewport Standard)
+           =================================================================== -->
+      <section class="hero-section" aria-label="Hero showcase">
+        <div class="hero-container">
 
-        <!-- Layer 1: Background Dusk Cliffside Photo -->
-        <div class="hero-layer-bg" data-slot="hero-dusk-house">
-          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&amp;fit=crop&amp;w=2000&amp;q=80" 
-               alt="Ultra-modern curved concrete-and-glass cliffside home at dusk with illuminated infinity pool" 
-               width="2000" height="1200" fetchpriority="high">
-        </div>
-
-        <!-- Atmospheric Dark Scrim for Optical Contrast -->
-        <div class="hero-layer-scrim" aria-hidden="true"></div>
-
-        <!-- Layer 2: Center-Spanning Giant Uppercase White Serif Headline -->
-        <div class="hero-giant-typography" aria-hidden="true">
-          <span class="hero-giant-title">LEON HOME</span>
-        </div>
-
-        <!-- Layer 3: Foreground Architectural Cutout & Dusk Foliage (Creates 3D Depth Over Letters) -->
-        <div class="hero-foreground-depth" aria-hidden="true">
-          <svg class="hero-foreground-svg" viewBox="0 0 1440 900" fill="none" preserveAspectRatio="none" role="img" aria-hidden="true">
-            <!-- Cantilevered Concrete Overhang Roofline & Glass Mullions Layered in Front of Text -->
-            <path d="M 0 540 Q 320 480, 720 520 T 1440 460 L 1440 900 L 0 900 Z" fill="rgba(10, 10, 10, 0.45)"/>
-            <path d="M 0 620 C 380 570, 760 610, 1440 560 L 1440 900 L 0 900 Z" fill="rgba(10, 10, 10, 0.65)"/>
-            <!-- Coastal Cliffside Cypress Silhouette Mask -->
-            <path d="M 0 510 C 60 480, 110 520, 140 560 C 170 520, 210 490, 240 540 C 270 510, 310 550, 350 600 L 0 600 Z" fill="rgba(14, 14, 14, 0.75)"/>
-          </svg>
-        </div>
-
-        <!-- Layer 4: Interactive Floating Chrome & Navigation -->
-        <nav class="hero-nav" aria-label="Primary Navigation">
-          <!-- Left: Brand Logo with Circular Icon -->
-          <a href="#hero" class="brand-logo-link" aria-label="LEON HOME Homepage">
-            <span class="brand-icon-emblem" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="9"/>
-                <path d="M12 3v18M3 12h18M6 8l12 8M6 16l12-8"/>
-              </svg>
-            </span>
-            <span>LEON HOME</span>
-          </a>
-
-          <!-- Center-Left: 5 Pill-Shaped Navigation Links -->
-          <div class="nav-links-cluster" role="menubar">
-            <a href="#hero" class="nav-pill is-active" role="menuitem">Home</a>
-            <a href="#value-proposition" class="nav-pill" role="menuitem">Properties</a>
-            <a href="#team" class="nav-pill" role="menuitem">Architecture</a>
-            <a href="#team" class="nav-pill" role="menuitem">Team</a>
-            <a href="#footer" class="nav-pill" role="menuitem">Contact</a>
-          </div>
-
-          <!-- Center-Right: 3 Circular Frosted Glass Social Buttons -->
-          <div class="nav-social-cluster" aria-label="Social Channels">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="LinkedIn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                <rect x="2" y="9" width="4" height="12"/>
-                <circle cx="4" cy="4" r="2"/>
-              </svg>
+          <!-- Floating Navigation Bar -->
+          <header class="hero-nav">
+            <!-- Brand Emblem (Left) -->
+            <a href="#" class="brand-emblem" aria-label="Roshani Enterprises homepage">
+              <span class="brand-monogram" aria-hidden="true">RE</span>
+              <span>Roshani Enterprises</span>
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="Instagram">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-              </svg>
-            </a>
-            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="X (formerly Twitter)">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M4 4l11.733 16h4.267l-11.733-16zM4 20l6.768-6.768M20 4l-6.768 6.768"/>
-              </svg>
-            </a>
+
+            <!-- Nav Links (Center) -->
+            <nav class="nav-menu-pills" aria-label="Main navigation">
+              <a href="#philosophy" class="nav-link active">Philosophy</a>
+              <a href="#portfolio" class="nav-link">Developments</a>
+              <a href="#engineering" class="nav-link">Engineering</a>
+              <a href="#advisory" class="nav-link">Advisory</a>
+              <a href="#consultation" class="nav-link">Consultation</a>
+            </nav>
+
+            <!-- Nav Actions (Right) -->
+            <div class="nav-actions">
+              <a href="tel:+912284901200" class="phone-action" aria-label="Call Roshani Enterprises at +91 22 8490 1200">
+                <svg class="phone-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>+91 22 8490 1200</span>
+              </a>
+
+              <button class="mobile-nav-toggle" aria-label="Open mobile navigation menu" aria-expanded="false">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <line x1="3" y1="12" x2="21" y2="12"></line>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <!-- Hero Content Body (Under 80 words total) -->
+          <div class="hero-body">
+            <h1 class="hero-main-title">Roshani Enterprises</h1>
+            <p class="hero-description">
+              Master-planned private estates, turnkey construction engineering, and generational architectural permanence.
+            </p>
+
+            <div class="hero-actions-row">
+              <!-- Single primary filled CTA in hero (Hallmark Floor F4 compliance) -->
+              <a href="#portfolio" class="btn-primary">
+                <span>Explore portfolio</span>
+                <svg class="icon-inline" viewBox="0 0 24 24" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <!-- Secondary action is outlined -->
+              <a href="#consultation" class="btn-outline-light">Private consultation</a>
+            </div>
           </div>
 
-          <!-- Far Right: Solid White Pill Button with Phone Icon -->
-          <a href="tel:+18004582900" class="phone-contact-pill" aria-label="Call concierge +1 (800) 458-2900">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-            </svg>
-            <span>+1 (800) 458-2900</span>
-          </a>
-        </nav>
-
-        <!-- Hero Mid-Section: Top-Left Subheading & Floating Right Stat Cards -->
-        <div class="hero-body-content">
-          <!-- Top-Left Subheading in Clean Geometric Sans-Serif -->
-          <div class="hero-subhead-badge" role="status">
-            <span>Upgrade your life with smart home technology</span>
+          <!-- Floating Architectural Badge -->
+          <div class="hero-floating-stat" aria-label="Enterprise credentials">
+            <span class="hero-stat-number">3.8M sq.ft</span>
+            <span class="hero-stat-caption">Turnkey luxury developments engineered across prime international corridors.</span>
           </div>
 
-          <!-- Floating Glass Stat Cards (Right Side) -->
-          <div class="hero-stats-column">
-            <!-- Upper Stat Card -->
-            <article class="stat-glass-card">
-              <span class="stat-number">5.9K+</span>
-              <p class="stat-subtext">Curated luxury homes<br>delivered across prime<br>coastal locations</p>
-            </article>
-
-            <!-- Lower-Right Stat Card -->
-            <article class="stat-glass-card">
-              <span class="stat-number">10K+</span>
-              <p class="stat-subtext">Private property owners<br>and architectural investors<br>guided through acquisition</p>
-            </article>
+          <!-- Hero Footer Annotations -->
+          <div class="hero-footer">
+            <span class="hero-note">Registered master builders and civil engineers</span>
+            <span class="hero-note">Architectural excellence since 1998</span>
           </div>
+
         </div>
+      </section>
 
-        <!-- Bottom Hero CTA: Centered Solid White Pill Button -->
-        <div class="hero-bottom-bar">
-          <a href="#value-proposition" class="btn-discover-pill">
-            <span>DISCOVER MORE</span>
-            <span class="btn-arrow-badge" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"/>
-                <polyline points="12 5 19 12 12 19"/>
-              </svg>
-            </span>
-          </a>
-        </div>
+      <!-- ===================================================================
+           2. PHILOSOPHY & ASYMMETRIC VALUE PROPOSITION (#philosophy)
+           =================================================================== -->
+      <section class="philosophy-section" id="philosophy" aria-labelledby="philosophy-heading">
+        <div class="section-inner">
+          <div class="section-header-centered">
+            <h2 class="section-title" id="philosophy-heading">Excellence in bespoke architecture</h2>
+            <p class="section-lead">
+              From off-market acquisitions to turnkey construction, we engineer private sanctuaries for permanence.
+            </p>
+          </div>
 
-      </div>
-    </header>
+          <!-- 3-Column Asymmetric Grid -->
+          <div class="asymmetric-grid">
+            <!-- Left Column: Narrative & Institutional Partners -->
+            <div class="val-left-col">
+              <h3 class="val-subheading">Structural integrity meets architectural vision</h3>
+              <p class="val-description">
+                Every estate is built with in-house engineering and bespoke procurement.
+              </p>
+              <a href="#engineering" class="btn-outline">Engineering standards</a>
 
-    <!-- =========================================================
-         SECTION 2: VALUE PROPOSITION (3-Column Asymmetric Grid)
-         ========================================================= -->
-    <section class="section-value" id="value-proposition">
-      <div class="container">
-        
-        <!-- Centered Two-Line Serif Title -->
-        <header class="section-header-centered">
-          <h2 class="serif-section-title">Experience Excellence<br>In Real Estate</h2>
-        </header>
-
-        <!-- 3-Column Asymmetric Grid -->
-        <div class="value-grid-asymmetric">
-          
-          <!-- Left Column -->
-          <div class="value-col-left">
-            <h3 class="col-bold-subtitle">Your Trusted Partner in Finding the Perfect Home</h3>
-            <p class="col-desc-text">We bridge avant-garde architectural construction with discrete property acquisitions, ensuring every cliffside residence exceeds structural and aesthetic expectations.</p>
-            
-            <a href="#team" class="btn-pill-black">About Us</a>
-
-            <div class="partners-wrap">
-              <span class="partner-label">Our Partner:</span>
-              <div class="partner-logos-row" aria-label="Recognized Industry Partners">
-                <div class="partner-logo-item">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-                  <span>ARCH-DIGEST</span>
+              <!-- Institutional Partners Strip -->
+              <div class="partners-block">
+                <p class="partners-title">Accreditations</p>
+                <div class="partners-row">
+                  <div class="partner-item">
+                    <svg class="partner-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+                    <span>RICS certified</span>
+                  </div>
+                  <div class="partner-item">
+                    <svg class="partner-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    <span>IGBC Platinum</span>
+                  </div>
+                  <div class="partner-item">
+                    <svg class="partner-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                    <span>Master Builders Guild</span>
+                  </div>
                 </div>
-                <div class="partner-logo-item">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
-                  <span>FOSTER+CO</span>
+              </div>
+            </div>
+
+            <!-- Center Column: Vertical Architectural Photo Frame -->
+            <div class="val-center-col">
+              <div class="val-photo-frame">
+                <img src="assets/img/val_villa_exact_4x.jpg" alt="Tiered architectural villa overlooking the coastal horizon" loading="lazy">
+              </div>
+            </div>
+
+            <!-- Right Column: Core Capabilities & Client Trust Block -->
+            <div class="val-right-col">
+              <!-- Feature 1: Turnkey Construction Engineering -->
+              <div class="feature-item-card">
+                <div class="feature-header-row">
+                  <svg class="feature-bullet-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M2 20h20M5 20V8l7-5 7 5v12"/>
+                  </svg>
+                  <h4 class="feature-heading">Turnkey engineering</h4>
                 </div>
-                <div class="partner-logo-item">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                  <span>DEZEEN</span>
+                <p class="feature-desc">
+                  Structural EPC, seismic casting, and bespoke detailing.
+                </p>
+              </div>
+
+              <!-- Feature 2: Discreet Prime Estate Brokerage -->
+              <div class="feature-item-card">
+                <div class="feature-header-row">
+                  <svg class="feature-bullet-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                  </svg>
+                  <h4 class="feature-heading">Prime acquisitions</h4>
+                </div>
+                <p class="feature-desc">
+                  Curated coastal sanctuaries, alpine retreats, and sky penthouses.
+                </p>
+              </div>
+
+              <!-- Reviews & Trust Block -->
+              <div class="reviews-trust-block">
+                <div class="reviews-content-row">
+                  <div class="avatar-stack" aria-hidden="true">
+                    <div class="avatar-item"><img src="assets/img/avatars/avatar1.svg" alt="Client 1"></div>
+                    <div class="avatar-item"><img src="assets/img/avatars/avatar2.svg" alt="Client 2"></div>
+                    <div class="avatar-item"><img src="assets/img/avatars/avatar3.svg" alt="Client 3"></div>
+                    <div class="avatar-badge-count">+140</div>
+                  </div>
+                  <div class="rating-details">
+                    <span class="rating-score-text">4.97 verified trust score</span>
+                    <div class="rating-stars-row" aria-label="5 star rating">
+                      <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                      <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                      <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                      <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                      <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- Center Column: Tall Vertical Rounded Image (aspect-ratio: 3/4) -->
-          <div class="value-col-center">
-            <div class="property-aspect-card" data-slot="value-pool-villa">
-              <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
-                   alt="Tall vertical view of a luxury coastal property with illuminated swimming pool at twilight" 
-                   width="1200" height="1600" loading="lazy">
-            </div>
-          </div>
-
-          <!-- Right Column: Stacked Feature Blocks & Reviews -->
-          <div class="value-col-right">
-            <div class="feature-item-block">
-              <h4 class="feature-block-title">Expert Guidance</h4>
-              <p class="feature-block-desc">Dedicated structural advisors and private portfolio managers assisting each phase from blueprint to ownership.</p>
-            </div>
-
-            <div class="feature-item-block">
-              <h4 class="feature-block-title">Wide Property Selection</h4>
-              <p class="feature-block-desc">Exclusive off-market cliffside estates, sustainable luxury residences, and panoramic waterfront pavilions.</p>
-            </div>
-
-            <!-- Reviews Block -->
-            <div class="reviews-summary-block">
-              <div class="avatars-overlap-cluster" aria-hidden="true">
-                <div class="avatar-circle">
-                  <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&amp;fit=crop&amp;w=120&amp;q=80" alt="Client avatar 1" width="36" height="36">
-                </div>
-                <div class="avatar-circle">
-                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&amp;fit=crop&amp;w=120&amp;q=80" alt="Client avatar 2" width="36" height="36">
-                </div>
-                <div class="avatar-circle">
-                  <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&amp;fit=crop&amp;w=120&amp;q=80" alt="Client avatar 3" width="36" height="36">
-                </div>
-                <div class="avatar-badge-dark">+500</div>
-              </div>
-              <div class="reviews-score-info">
-                <span class="score-bold">4.9</span>
-                <span class="score-label">Customer Ratings</span>
-              </div>
-            </div>
-
-          </div>
-
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- =========================================================
-         SECTION 3: TEAM SHOWCASE (Full-Width Black Band)
-         ========================================================= -->
-    <section class="section-team-showcase" id="team">
-      <div class="container">
-        <div class="team-split-layout">
+      <!-- ===================================================================
+           3. CURATED PORTFOLIO & INTERACTIVE PROPERTY CAROUSEL (#portfolio)
+           =================================================================== -->
+      <section class="portfolio-section" id="portfolio" aria-labelledby="portfolio-heading">
+        <div class="section-inner">
+          <div class="section-header-centered">
+            <h2 class="section-title" id="portfolio-heading">Curated architectural portfolio</h2>
+            <p class="section-lead">
+              Flagship residences and bespoke commissions delivered with uncompromising craftsmanship.
+            </p>
+          </div>
 
-          <!-- Left Side (60% Width): 3-Column Row with Edge Fade Overlay -->
-          <div class="team-cards-wrapper">
-            <div class="team-edge-fade-overlay" aria-hidden="true"></div>
+          <!-- Category Filter Bar -->
+          <div class="portfolio-filter-bar" role="tablist" aria-label="Property categories">
+            <button class="category-tab active" role="tab" aria-selected="true" data-filter="all">All</button>
+            <button class="category-tab" role="tab" aria-selected="false" data-filter="coastal">Coastal</button>
+            <button class="category-tab" role="tab" aria-selected="false" data-filter="alpine">Alpine</button>
+            <button class="category-tab" role="tab" aria-selected="false" data-filter="urban">Urban</button>
+          </div>
 
-            <div class="team-portrait-row">
-              <!-- Team Member 1 -->
-              <article class="team-card">
-                <div class="team-portrait-frame" data-slot="team-elena">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
-                       alt="Elena Rostova, Principal Architect" 
-                       width="800" height="1000" loading="lazy">
+          <!-- 3-Card Interactive Property Carousel -->
+          <div class="carousel-viewport-wrapper">
+            <div class="carousel-stage" role="region" aria-label="Properties carousel">
+
+              <!-- Property 1 -->
+              <article class="property-card" data-category="coastal" tabindex="0" aria-label="The Obsidian Coastal Sanctuary">
+                <div class="property-photo-container">
+                  <img src="assets/img/proj_left_exact_4x.jpg" alt="The Obsidian Coastal Sanctuary modern villa" loading="lazy">
+                  <span class="property-status-chip">Available</span>
                 </div>
-                <div class="team-meta-info">
-                  <span class="team-member-name">Elena Rostova</span>
-                  <span class="team-member-role">Principal Architect</span>
+                <div class="property-body-block">
+                  <div class="property-meta-main">
+                    <h3 class="property-name">The Obsidian Villa</h3>
+                    <div class="property-specs-list">
+                      <span class="property-spec-item">8,400 sq.ft</span>
+                      <span class="property-spec-item">5 bedrooms</span>
+                      <span class="property-spec-item">Cantilevered pool</span>
+                    </div>
+                  </div>
+                  <div class="property-footer-row">
+                    <span class="property-price">&#8377;32.5 Cr</span>
+                    <button class="link-inline view-specs-btn" data-id="0">
+                      <span>Specifications</span>
+                      <svg class="icon-inline" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                  </div>
                 </div>
               </article>
 
-              <!-- Team Member 2 -->
-              <article class="team-card">
-                <div class="team-portrait-frame" data-slot="team-marcus">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
-                       alt="Marcus Vance, Head of Development" 
-                       width="800" height="1000" loading="lazy">
+              <!-- Property 2 (Featured Focus) -->
+              <article class="property-card active-focus" data-category="alpine" tabindex="0" aria-current="true" aria-label="The Monolith Alpine Chalet">
+                <div class="property-photo-container">
+                  <img src="assets/img/proj_chalet_exact_4x.jpg" alt="The Monolith Alpine Chalet with architectural pool and lighting" loading="lazy">
+                  <span class="property-status-chip">Completed</span>
                 </div>
-                <div class="team-meta-info">
-                  <span class="team-member-name">Marcus Vance</span>
-                  <span class="team-member-role">Head of Development</span>
+                <div class="property-body-block">
+                  <div class="property-meta-main">
+                    <h3 class="property-name">The Monolith Chalet</h3>
+                    <div class="property-specs-list">
+                      <span class="property-spec-item">10,200 sq.ft</span>
+                      <span class="property-spec-item">6 bedrooms</span>
+                      <span class="property-spec-item">Heated pavilion</span>
+                    </div>
+                  </div>
+                  <div class="property-footer-row">
+                    <span class="property-price">&#8377;42.0 Cr</span>
+                    <button class="link-inline view-specs-btn" data-id="1">
+                      <span>Specifications</span>
+                      <svg class="icon-inline" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                  </div>
                 </div>
               </article>
 
-              <!-- Team Member 3 -->
-              <article class="team-card">
-                <div class="team-portrait-frame" data-slot="team-sophia">
-                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
-                       alt="Sophia Chen, Private Client Director" 
-                       width="800" height="1000" loading="lazy">
+              <!-- Property 3 -->
+              <article class="property-card" data-category="coastal" tabindex="0" aria-label="The Azure Beachfront Pavilion">
+                <div class="property-photo-container">
+                  <img src="assets/img/proj_right_exact_4x.jpg" alt="The Azure Beachfront Pavilion modern luxury residence" loading="lazy">
+                  <span class="property-status-chip">Commission</span>
                 </div>
-                <div class="team-meta-info">
-                  <span class="team-member-name">Sophia Chen</span>
-                  <span class="team-member-role">Private Client Director</span>
+                <div class="property-body-block">
+                  <div class="property-meta-main">
+                    <h3 class="property-name">The Azure Pavilion</h3>
+                    <div class="property-specs-list">
+                      <span class="property-spec-item">11,800 sq.ft</span>
+                      <span class="property-spec-item">6 bedrooms</span>
+                      <span class="property-spec-item">Private shoreline</span>
+                    </div>
+                  </div>
+                  <div class="property-footer-row">
+                    <span class="property-price">&#8377;58.0 Cr</span>
+                    <button class="link-inline view-specs-btn" data-id="2">
+                      <span>Specifications</span>
+                      <svg class="icon-inline" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                  </div>
                 </div>
               </article>
+
             </div>
-          </div>
-
-          <!-- Right Side (40% Width): Vertically Centered Content Block -->
-          <div class="team-content-block">
-            <h2 class="team-serif-title">Meet Our<br>Expert Team</h2>
-            <p class="team-desc-text">Our multidisciplinary team combines pioneering civil engineering, award-winning coastal architecture, and high-touch private client consultation to shape visionary residences.</p>
-            <a href="#featured-projects" class="btn-pill-white">View All</a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================
-         SECTION 4: FEATURED PROJECTS CAROUSEL
-         ========================================================= -->
-    <section class="section-featured-projects" id="featured-projects">
-      <div class="container">
-        
-        <!-- Header Row (2-Column Split) -->
-        <header class="featured-header-split">
-          <h2 class="featured-serif-title">Find Your Dream<br>Home Today</h2>
-          <p class="featured-intro-text">Discover our signature portfolio of coastal architectural homes, engineered for timeless permanence and curated for discerning modern living.</p>
-        </header>
-
-        <!-- Carousel Showcase Track -->
-        <div class="carousel-viewport-wrapper">
-          <div class="carousel-track" id="project-carousel-track">
-            
-            <!-- Side Project Card 1 (Left Cropped & Faded) -->
-            <article class="carousel-card is-side" id="project-card-0" aria-hidden="true">
-              <div class="project-image-box" data-slot="project-1">
-                <div class="property-status-pill" role="status">
-                  <span class="status-indicator-dot"></span>
-                  <span>Available Property</span>
-                </div>
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
-                     alt="The Cliffside Pavilion, modern coastal home" 
-                     width="1200" height="750" loading="lazy">
-              </div>
-              <div class="project-meta-row">
-                <h3 class="project-name-heading">The Cliffside Pavilion</h3>
-                <span class="project-price-value">$6,200,000</span>
-              </div>
-            </article>
-
-            <!-- Center Active Project Card 2 (Large, 50% width, fully opaque) -->
-            <article class="carousel-card is-center" id="project-card-1" aria-hidden="false">
-              <div class="project-image-box" data-slot="project-2">
-                <div class="property-status-pill" role="status">
-                  <span class="status-indicator-dot"></span>
-                  <span>Available Property</span>
-                </div>
-                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
-                     alt="Modern Family Home with glass facade and illuminated grounds" 
-                     width="1200" height="750" loading="lazy">
-              </div>
-              <div class="project-meta-row">
-                <h3 class="project-name-heading">Modern Family Home</h3>
-                <span class="project-price-value">$4,500,000</span>
-              </div>
-            </article>
-
-            <!-- Side Project Card 3 (Right Cropped & Faded) -->
-            <article class="carousel-card is-side" id="project-card-2" aria-hidden="true">
-              <div class="project-image-box" data-slot="project-3">
-                <div class="property-status-pill" role="status">
-                  <span class="status-indicator-dot"></span>
-                  <span>Available Property</span>
-                </div>
-                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
-                     alt="Azure Coastal Villa with terrace and infinity pool" 
-                     width="1200" height="750" loading="lazy">
-              </div>
-              <div class="project-meta-row">
-                <h3 class="project-name-heading">Azure Coastal Villa</h3>
-                <span class="project-price-value">$3,850,000</span>
-              </div>
-            </article>
-
           </div>
 
           <!-- Carousel Controls -->
           <div class="carousel-controls-bar">
-            <button class="carousel-arrow-btn" id="carousel-prev" aria-label="Previous property">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <polyline points="15 18 9 12 15 6"/>
-              </svg>
+            <button class="carousel-nav-control" id="carousel-prev-btn" aria-label="Previous development">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
             </button>
-            <button class="carousel-arrow-btn" id="carousel-next" aria-label="Next property">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <polyline points="9 18 15 12 9 6"/>
-              </svg>
+            <div class="carousel-dots" role="tablist" aria-label="Development index">
+              <button class="carousel-pip" role="tab" aria-selected="false" aria-label="Slide 1"></button>
+              <button class="carousel-pip active" role="tab" aria-selected="true" aria-label="Slide 2"></button>
+              <button class="carousel-pip" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+            </div>
+            <button class="carousel-nav-control" id="carousel-next-btn" aria-label="Next development">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </button>
           </div>
+
         </div>
+      </section>
 
-      </div>
-    </section>
+      <!-- ===================================================================
+           4. CONSTRUCTION CRAFT & STRUCTURAL RIGOR (#engineering)
+           =================================================================== -->
+      <section class="engineering-section" id="engineering" aria-labelledby="engineering-heading">
+        <div class="section-inner">
+          <div class="section-header-centered engineering-header">
+            <h2 class="section-title" id="engineering-heading">Built for permanence</h2>
+            <p class="section-lead">
+              Structural civil engineering united with artisanal masonry.
+            </p>
+          </div>
 
-  </main>
+          <div class="engineering-grid">
+            <!-- Pillar 1 -->
+            <div class="engineering-card">
+              <div>
+                <span class="card-numeral">01 / Foundation</span>
+                <h3 class="engineering-title">Monolithic core</h3>
+                <p class="engineering-body">
+                  Grade M60 concrete and post-tensioned slabs for Zone-4 seismic resilience.
+                </p>
+              </div>
+              <span class="engineering-spec-badge">100-Year warranty</span>
+            </div>
 
-  <!-- =========================================================
-       SECTION 5: EDITORIAL MASTHEAD FOOTER
-       ========================================================= -->
-  <footer class="site-footer" id="footer">
-    <div class="container">
-      <div class="footer-inner-split">
-        <div class="footer-brand-title">LEON HOME</div>
-        <nav class="footer-nav-row" aria-label="Footer Navigation">
-          <a href="#hero" class="footer-nav-link">Home</a>
-          <a href="#value-proposition" class="footer-nav-link">Properties</a>
-          <a href="#team" class="footer-nav-link">Architecture</a>
-          <a href="#featured-projects" class="footer-nav-link">Portfolio</a>
-          <a href="#hero" class="footer-nav-link">Privacy</a>
-        </nav>
-      </div>
-      <div class="footer-bottom-legal">
-        <span>&copy; 2026 LEON HOME Private Real Estate &amp; Construction.</span>
-        <span>Photographs: <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer" class="photo-credits-link">Unsplash Architectural Collective</a></span>
+            <!-- Pillar 2 -->
+            <div class="engineering-card">
+              <div>
+                <span class="card-numeral">02 / Envelope</span>
+                <h3 class="engineering-title">Artisanal masonry</h3>
+                <p class="engineering-body">
+                  Belgian limestone facades and thermally isolated bronze curtain walls.
+                </p>
+              </div>
+              <span class="engineering-spec-badge">U-value &lt; 0.85</span>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div class="engineering-card">
+              <div>
+                <span class="card-numeral">03 / Acoustics</span>
+                <h3 class="engineering-title">Acoustic isolation</h3>
+                <p class="engineering-body">
+                  Floating floor slabs, triple-laminated glazing, and vibration-damped joints.
+                </p>
+              </div>
+              <span class="engineering-spec-badge">Sub-26 dB ambient</span>
+            </div>
+
+            <!-- Pillar 4 -->
+            <div class="engineering-card">
+              <div>
+                <span class="card-numeral">04 / Ecology</span>
+                <h3 class="engineering-title">Micro-climates</h3>
+                <p class="engineering-body">
+                  Geothermal loops, integrated solar slate, and zero-discharge cisterns.
+                </p>
+              </div>
+              <span class="engineering-spec-badge">Net-Zero design</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           5. LEADERSHIP & PRIVATE ADVISORY (#advisory)
+           =================================================================== -->
+      <section class="advisory-section" id="advisory" aria-labelledby="advisory-heading">
+        <div class="section-inner">
+          <div class="advisory-split-grid">
+            <!-- Left: 3 Leadership Portrait Cards -->
+            <div class="team-cards-row" aria-label="Leadership team">
+              <!-- Leader 1 -->
+              <div class="team-profile-card">
+                <div class="team-photo-frame">
+                  <img src="assets/img/team1_exact_4x.jpg" alt="Rajiv Roshani, Founder and Managing Director" loading="lazy">
+                </div>
+                <div class="team-card-info">
+                  <p class="team-person-name">Rajiv Roshani</p>
+                  <p class="team-person-role">Founder and Managing Director</p>
+                </div>
+              </div>
+
+              <!-- Leader 2 -->
+              <div class="team-profile-card">
+                <div class="team-photo-frame">
+                  <img src="assets/img/team2_exact_4x.jpg" alt="Ananya Deshmukh, Principal Architect" loading="lazy">
+                </div>
+                <div class="team-card-info">
+                  <p class="team-person-name">Ananya Deshmukh</p>
+                  <p class="team-person-role">Principal Architect and Partner</p>
+                </div>
+              </div>
+
+              <!-- Leader 3 -->
+              <div class="team-profile-card">
+                <div class="team-photo-frame">
+                  <img src="assets/img/team3_exact_4x.jpg" alt="Vikram Singhania, Director of Structural Engineering" loading="lazy">
+                </div>
+                <div class="team-card-info">
+                  <p class="team-person-name">Vikram Singhania</p>
+                  <p class="team-person-role">Director of Structural EPC</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Advisory Philosophy & Client Testimonial -->
+            <div class="advisory-text-block">
+              <h2 class="section-title" id="advisory-heading">Guided by master builders</h2>
+              <p class="val-description">
+                Our partners personally oversee every commission.
+              </p>
+
+              <blockquote class="advisory-quote">
+                <p class="quote-body">
+                  &ldquo;Roshani Enterprises delivered our coastal residence with remarkable structural rigor and aesthetic poetry.&rdquo;
+                </p>
+                <cite class="quote-author">Trustee, Mumbai Family Office</cite>
+              </blockquote>
+
+              <a href="#consultation" class="btn-outline">Private briefing</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           6. PRIVATE CONSULTATION CONCIERGE (#consultation)
+           =================================================================== -->
+      <section class="consultation-section" id="consultation" aria-labelledby="consultation-heading">
+        <div class="section-inner">
+          <div class="section-header-centered">
+            <h2 class="section-title" id="consultation-heading">Private consultation</h2>
+            <p class="section-lead">
+              Confidential advisory for bespoke residential commissions.
+            </p>
+          </div>
+
+          <div class="consultation-card">
+            <form id="consultation-form" novalidate>
+              <div class="consultation-form-grid">
+                <!-- Field 1: Service Type -->
+                <div class="form-field-group">
+                  <label for="consult-service" class="field-label">Scope</label>
+                  <select id="consult-service" class="field-select" required>
+                    <option value="">Select scope</option>
+                    <option value="bespoke-construction">Bespoke construction</option>
+                    <option value="prime-acquisition">Prime acquisition</option>
+                    <option value="turnkey-development">Turnkey development</option>
+                    <option value="architectural-advisory">Architectural advisory</option>
+                  </select>
+                </div>
+
+                <!-- Field 2: Target Location -->
+                <div class="form-field-group">
+                  <label for="consult-location" class="field-label">Location</label>
+                  <select id="consult-location" class="field-select" required>
+                    <option value="">Select region</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="alibaug">Alibaug</option>
+                    <option value="goa">Goa</option>
+                    <option value="delhi">Delhi NCR</option>
+                    <option value="international">International</option>
+                  </select>
+                </div>
+
+                <!-- Field 3: Full Name -->
+                <div class="form-field-group">
+                  <label for="consult-name" class="field-label">Full name</label>
+                  <input type="text" id="consult-name" class="field-input" placeholder="Your full name" required>
+                </div>
+
+                <!-- Field 4: Contact Number -->
+                <div class="form-field-group">
+                  <label for="consult-phone" class="field-label">Phone</label>
+                  <input type="tel" id="consult-phone" class="field-input" placeholder="+91 00000 00000" required>
+                </div>
+
+                <!-- Field 5: Email -->
+                <div class="form-field-group">
+                  <label for="consult-email" class="field-label">Confidential email</label>
+                  <input type="email" id="consult-email" class="field-input" placeholder="name@domain.com" required>
+                </div>
+
+                <!-- Field 6: Anticipated Timeline -->
+                <div class="form-field-group">
+                  <label for="consult-timeline" class="field-label">Timeline</label>
+                  <select id="consult-timeline" class="field-select">
+                    <option value="immediate">Immediate</option>
+                    <option value="6-months">3 to 6 months</option>
+                    <option value="12-months">6 to 12 months</option>
+                    <option value="planning">Planning stage</option>
+                  </select>
+                </div>
+
+                <!-- Field 7: Project Brief -->
+                <div class="form-field-group form-full-width">
+                  <label for="consult-message" class="field-label">Project outline</label>
+                  <textarea id="consult-message" class="field-textarea" placeholder="Detail your acreage requirements, architectural style, or development goals..."></textarea>
+                </div>
+              </div>
+
+              <!-- Submit Row -->
+              <div class="form-submit-row">
+                <p class="privacy-notice">
+                  Protected under strict non-disclosure agreements.
+                </p>
+                <button type="submit" class="btn-primary" id="consult-submit-btn">
+                  <span>Submit request</span>
+                  <svg class="icon-inline" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+
+              <!-- Success / Feedback Message -->
+              <div class="form-feedback-message" id="form-feedback" role="alert" aria-live="polite">
+                Your request has been received. Our principals will respond shortly.
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           7. ARCHITECTURAL LEDGER FOOTER
+           =================================================================== -->
+      <footer class="site-footer">
+        <div class="section-inner">
+          <div class="footer-top-grid">
+            <!-- Brand Column -->
+            <div class="footer-brand-col">
+              <a href="#" class="brand-emblem" aria-label="Roshani Enterprises homepage">
+                <span class="brand-monogram" aria-hidden="true">RE</span>
+                <span>Roshani Enterprises</span>
+              </a>
+              <p class="footer-brand-desc">
+                Engineering generational permanence across prime luxury corridors.
+              </p>
+            </div>
+
+            <!-- Offices Column -->
+            <div>
+              <p class="footer-col-heading">Executive offices</p>
+              <ul class="footer-links-list">
+                <li class="footer-link-item">Mumbai</li>
+                <li class="footer-link-item">Dubai</li>
+                <li class="footer-link-item">London</li>
+                <li class="footer-link-item">Goa</li>
+              </ul>
+            </div>
+
+            <!-- Capabilities Column -->
+            <div>
+              <p class="footer-col-heading">Practice areas</p>
+              <ul class="footer-links-list">
+                <li><a href="#engineering" class="footer-link-item">Residential EPC</a></li>
+                <li><a href="#portfolio" class="footer-link-item">Private estates</a></li>
+                <li><a href="#engineering" class="footer-link-item">Civil engineering</a></li>
+                <li><a href="#advisory" class="footer-link-item">Acquisitions</a></li>
+              </ul>
+            </div>
+
+            <!-- Regulatory Column -->
+            <div>
+              <p class="footer-col-heading">Governance</p>
+              <ul class="footer-links-list">
+                <li class="footer-link-item">RERA Registered</li>
+                <li class="footer-link-item">ISO 9001 Quality</li>
+                <li><a href="#privacy" class="footer-link-item">Privacy policy</a></li>
+                <li><a href="#terms" class="footer-link-item">Terms of service</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Bottom Bar -->
+          <div class="footer-bottom-bar">
+            <div>&copy; 2026 Roshani Enterprises.</div>
+            <div class="footer-cert-tags">
+              <span>IGBC Member</span>
+              <span>&bull;</span>
+              <span>RICS Accredited</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- Accessible Property Specifications Modal -->
+  <div class="modal-backdrop" id="property-modal" role="dialog" aria-modal="true" aria-labelledby="modal-prop-title" aria-hidden="true" hidden>
+    <div class="modal-container">
+      <button class="modal-close-trigger" id="modal-close-btn" aria-label="Close specifications dialog">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <h3 class="modal-title" id="modal-prop-title">Architectural specifications</h3>
+      <table class="modal-specs-table">
+        <tbody>
+          <tr>
+            <td>Development name</td>
+            <td id="spec-name">The Obsidian Coastal Sanctuary</td>
+          </tr>
+          <tr>
+            <td>Location</td>
+            <td id="spec-location">Alibaug Coastal Sanctuary, Maharashtra</td>
+          </tr>
+          <tr>
+            <td>Gross built-up area</td>
+            <td id="spec-area">8,400 sq.ft (780 m&sup2;)</td>
+          </tr>
+          <tr>
+            <td>Site acreage</td>
+            <td id="spec-site">1.85 Acres private compound</td>
+          </tr>
+          <tr>
+            <td>Structural methodology</td>
+            <td id="spec-structure">Post-tensioned concrete and basalt stone</td>
+          </tr>
+          <tr>
+            <td>Sustainability rating</td>
+            <td id="spec-eco">IGBC Platinum Certified</td>
+          </tr>
+          <tr>
+            <td>Handover status</td>
+            <td id="spec-handover">Immediate handover available</td>
+          </tr>
+          <tr>
+            <td>Valuation</td>
+            <td id="spec-valuation">&#8377;32.5 Cr ($3,900,000 USD)</td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="margin-top: 24px; display: flex; justify-content: flex-end; gap: 12px;">
+        <button class="btn-outline" id="modal-dismiss-btn">Close brief</button>
+        <a href="#consultation" class="btn-outline" id="modal-inquire-btn">Inquire for estate</a>
       </div>
     </div>
-  </footer>
+  </div>
 
-  <!-- Slot Script & Interactive Logic -->
-  <script>
-    window.hallmarkSlots = (m) => {
-      for (const [k, v] of Object.entries(m)) {
-        const s = document.querySelector(`[data-slot="${k}"]`);
-        if (!s) continue;
-        const im = new Image();
-        im.src = typeof v === 'string' ? v : v.src;
-        im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || '';
-        s.querySelectorAll(':scope > img').forEach((o) => o.remove());
-        s.prepend(im);
-      }
-    };
-    document.querySelectorAll('[data-slot] img').forEach((i) => {
-      if (i.complete && !i.naturalWidth) i.remove();
-      else i.addEventListener('error', () => i.remove(), { once: true });
-    });
-  </script>
-  <script src="./app.js"></script>
-
+  <script src="app.js"></script>
 </body>
 </html>

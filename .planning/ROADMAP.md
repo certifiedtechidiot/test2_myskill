@@ -1,33 +1,42 @@
-# Roadmap: Luxury Real Estate & Construction Landing Page
+# Development Roadmap: Roshani Enterprises Homepage
 
-- [x] **Phase 1: Project Intake & Design System Tokens**
-  - Define CSS tokens for color palette, editorial serif typography, glassmorphism, spacing, and 6-state interactions.
-  - Establish reset and base styles adhering to Hallmark and Impeccable guidelines.
+- [x] **Phase 1: GSD Intake & Strategic Specification**
+  - [x] Define brand positioning, value proposition, and audience profile
+  - [x] Establish architectural design system tokens and anti-slop rules
+  - [x] Document project specification in `.planning/PROJECT.md`
 
-- [x] **Phase 2: Section 1 — Hero with Layered 3D Depth**
-  - 24px rounded hero container with full-bleed dusk cliffside architectural imagery.
-  - Floating top navigation bar with brand logo, 5 pill nav links ("Home" active in solid white, 4 in frosted glass), 3 frosted circular social buttons, and solid white pill phone CTA.
-  - Uppercase sans-serif subheading ("Upgrade your life with smart home technology").
-  - Center-spanning giant uppercase serif "LEON HOME" text masked behind foreground architectural roof and elements.
-  - Two floating dark frosted glass stat cards ("5.9K+" and "10K+") on right half.
-  - Centered solid white pill bottom CTA ("DISCOVER MORE" with circular black arrow icon).
+- [x] **Phase 2: Tokens, Theme Architecture & Anti-Slop Stamp**
+  - [x] Construct `tokens.css` with valid Hallmark stamp, warm limestone / obsidian ink palette, strict type scale, and motion tokens
+  - [x] Update `base.css` with accessibility reset, focus-visible rings, themed browser surfaces, and prefers-reduced-motion support
 
-- [x] **Phase 3: Section 2 — Value Proposition (3-Column Asymmetric Grid)**
-  - Centered two-line serif title ("Experience Excellence / In Real Estate").
-  - Left column: bold subtitle, muted gray paragraph, solid black pill CTA ("About Us"), "Our Partner:" label with 3 grayscale partner logos.
-  - Center column: 3/4 aspect-ratio vertical rounded image of luxury coastal pool at twilight.
-  - Right column: stacked feature blocks ("Expert Guidance" & "Wide Property Selection") with 1px dividers, and bottom "Reviews" block with 3 overlapping avatars, dark rating badge, and "4.9 Customer Ratings".
+- [x] **Phase 3: Screen-One Hero & Architectural Navigation**
+  - [x] Build floating navigation with Roshani Enterprises monogram, curated section links, and direct phone link
+  - [x] Implement standalone hero adhering to 1280x800 viewport standard (under 80 words, one filled primary CTA, crisp secondary link)
+  - [x] Integrate authentic high-resolution architectural villa background with atmospheric depth
 
-- [x] **Phase 4: Section 3 — Team Showcase (Full-Width Black Band)**
-  - Full-width #000000 background section with generous padding.
-  - Left side (60%): 3-column row of vertical rounded portrait cards with member name and gray role below each, plus dark fade gradient over left edge.
-  - Right side (40%): white serif heading ("Meet Our Expert Team"), muted gray description, solid white pill CTA ("View All").
+- [x] **Phase 4: Philosophy, Value Proposition & Construction Synergy**
+  - [x] Asymmetric editorial 3-column architectural grid
+  - [x] Highlight dual excellence: Bespoke Construction Engineering & Prime Real Estate Advisory
+  - [x] Integrated institutional credentials (RICS, IGBC Platinum, Master Builders Guild)
 
-- [x] **Phase 5: Section 4 — Featured Projects Carousel & Footer**
-  - Header row: 2-column split with left-aligned two-line serif title ("Find Your Dream Home Today") and right-aligned intro paragraph.
-  - Interactive carousel track: 3-card layout (center card 50% width, opaque; side cards smaller, faded with white gradient overlay).
-  - Card structure: rounded image container with top-left frosted glass pill ("Available Property" + green status dot), and flex bottom row with title ("Modern Family Home") and price ("$4,500,000" / "$4,500,00").
-  - Complete editorial footer, keyboard accessibility, and mobile responsiveness.
+- [x] **Phase 5: Curated Portfolio & Interactive Property Showcase**
+  - [x] Dynamic, accessible property carousel with varied column widths and active focus states
+  - [x] Category filtering (All, Coastal, Alpine, Urban)
+  - [x] Live architectural specifications (square footage, completion stage, valuation, location)
+  - [x] Accessible detail inspection modal with keyboard (Esc) and backdrop dismissal
 
-- [x] **Phase 6: Quality Verification & Anti-Slop Audit**
-  - Ran `sloplint.mjs` against `index.html`, `styles.css`, `tokens.css`, and `base.css`: 0 FAILURES.
+- [x] **Phase 6: Engineering Rigor & Material Craftsmanship**
+  - [x] Deep-dive into structural excellence: Grade M60 monolithic concrete, Zone-4 seismic resilience, Belgian limestone, sub-26 dB acoustic isolation, and geothermal micro-climates
+  - [x] Architectural pillar cards with specific engineering benchmarks
+
+- [x] **Phase 7: Leadership, Master Craftsmen & Private Advisory**
+  - [x] Leadership profiles with authentic editorial portraits (Managing Director, Principal Architect, EPC Director)
+  - [x] Verified client testimonial from private family office trustee
+
+- [x] **Phase 8: Private Consultation Concierge & Interactive Booking**
+  - [x] Interactive project intake form (Bespoke Construction, Prime Acquisition, Turnkey Development)
+  - [x] Accessible form controls with real-time feedback and state coverage
+
+- [x] **Phase 9: Architectural Ledger Footer, Sloplint Audit & Polish**
+  - [x] Multi-column architectural footer with global office coordinates (Mumbai, Dubai, London, Goa)
+  - [x] Mechanical verification via `sloplint.mjs`: Clean 0 FAIL, 0 REFLEX, 0 WARN

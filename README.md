@@ -1,71 +1,42 @@
-# LEON HOME — Luxury Real Estate & Architectural Construction
+# Roshani Enterprises: Luxury Real Estate & Bespoke Construction
 
-A modern, editorial luxury construction and real estate landing page featuring high-contrast editorial layouts, glassmorphic UI elements, and layered 3D typography.
-
-Built using the **Hallmark** design framework and verified with `sloplint` for zero-slop craft standards.
+Homepage and digital architectural flagship for **Roshani Enterprises**, engineered under the **Unified Web Development Engine** (GSD + Hallmark + AI Design Skill + Taste Skill 2.5 + Impeccable 4.8 + OpenDesign).
 
 ---
 
-## 🌟 Key Features
+## 🏛️ Architecture & Design System
 
-1. **Layered 3D Depth Hero**:
-   - Ultra-modern cliffside architecture visual at dusk with 24px container radius.
-   - Giant uppercase serif typography (`LEON HOME`) spanning full width, physically masked behind cantilevered concrete roof slabs and coastal foliage for true foreground depth.
-   - Floating dark glass stat cards (`5.9K+` and `10K+`) with frosted overlays (`rgba(255, 255, 255, 0.15)` & `backdrop-filter: blur(12px)`).
-   - Centered solid white discovery pill CTA with circular arrow badge.
-
-2. **Top Floating Navigation**:
-   - High-contrast frosted glass pill cluster with active solid pill state.
-   - Frosted circular social icons (LinkedIn, Instagram, X).
-   - Direct concierge contact pill (`+1 (800) 458-2900`).
-
-3. **Value Proposition (3-Column Asymmetric Grid)**:
-   - Centered 2-line serif title on pure white background.
-   - Left column: bold subtitle, narrative, solid pill CTA, and recognized architectural partner emblems (`ARCH-DIGEST`, `FOSTER+CO`, `DEZEEN`).
-   - Center column: 3:4 vertical card showcasing a luxury coastal property with lit pool at twilight.
-   - Right column: stacked feature blocks (`Expert Guidance`, `Wide Property Selection`) and reviews counter with overlapping customer avatars and `4.9` rating badge.
-
-4. **Team Showcase (Full-Width Black Band)**:
-   - High-contrast stark black (`#0a0a0a`) editorial band.
-   - 3-column portrait cards with dark gradient edge fade over the first card.
-   - Principal architect and leadership profiles with paired serif headline block and white pill button.
-
-5. **Featured Projects Carousel**:
-   - 2-column header row with title and intro text.
-   - Horizontal showcase with active center card (50% width, fully opaque) and cropped, faded side cards.
-   - Available property status badge with live emerald indicator dot and price display.
-   - Accessible keyboard and button controls.
+- **Genre**: Architectural Editorial & Monolithic Luxury
+- **Palette**: Warm limestone alabaster paper (`#FBF9F5`, `#F5F1EB`), deep obsidian charcoal ink (`#121316`, `#191B21`), and champagne brass accent (`#C5A880`, `#A28256`). Zero un-tokenized hex codes, zero pure #fff/#000 reflex glare.
+- **Typography**: Display Roman Serif (`Playfair Display`) paired with precision humanist grotesk (`Plus Jakarta Sans`). Strict sentence-case controls and zero all-caps slop.
+- **Surface Language**: Solid architectural planes, crisp 1px hairline dividers, and true lightness elevation (zero AI glass blur).
+- **Mechanical Validation**: `sloplint.mjs` Clean: **0 FAIL, 0 REFLEX, 0 WARN**.
 
 ---
 
-## 🛠️ Tech Stack & Standards
+## 💎 Key Features & Sections
 
-- **Semantic HTML5** & **Modern CSS3** (CSS Custom Properties declared at `:root`).
-- **Typography**: `Playfair Display` (High-contrast editorial serif) & `Plus Jakarta Sans` (Geometric sans-serif).
-- **Zero-Dependency Vanilla JavaScript** for interactive carousel and smooth navigation.
-- **Accessibility & Compliance**: Strict `:focus-visible` styling, `:active`/`:disabled` states, reduced motion fallbacks, and 0 sloplint errors.
+1. **Screen-One Viewport Hero (1280x800 Benchmark)**:
+   - Standalone architectural hero featuring the brand emblem, succinct single-sentence value proposition (under 80 words), single filled primary CTA (`Explore portfolio`), and secondary consultation link.
+2. **Strategic Philosophy & Asymmetric Grid**:
+   - 3-column architectural layout highlighting turnkey construction EPC, prime estate acquisitions, and verified institutional accreditations (RICS, IGBC Platinum, Master Builders Guild).
+3. **Curated Portfolio & Interactive Showcase**:
+   - Interactive category filtering (All, Coastal, Alpine, Urban), 3-card varied carousel, and accessible architectural specifications modal dialog with complete structural specs.
+4. **Engineering Rigor & Materiality**:
+   - Technical breakdown of Grade M60 low-carbon concrete, Zone-4 seismic resilience, Belgian limestone envelopes, sub-26 dB acoustic isolation, and geothermal micro-climates.
+5. **Leadership & Private Advisory**:
+   - Principal architect and engineering director profiles with verified private family office testimonials.
+6. **Private Consultation Concierge**:
+   - Interactive project intake form with location, scope, and timeline selectors, real-time client-side feedback, and NDA privacy guarantees.
+7. **Architectural Ledger Footer**:
+   - Multi-column ledger with international office coordinates (Mumbai, Dubai, London, Goa) and RERA / ISO compliance credentials.
 
 ---
 
-## 🚀 Running Locally
+## 🛠️ Verification & Quality Checks
 
+Run the mechanical gate checker:
 ```bash
-# Start local Node.js static preview server
-node serve.js
+node <path-to-skill>/scripts/sloplint.mjs index.html
 ```
-Open [http://localhost:3000/](http://localhost:3000/) in your browser.
-
----
-
-## 📁 Repository Structure
-
-```
-├── index.html              # Main landing page markup
-├── styles.css              # Custom editorial stylesheet
-├── tokens.css              # Global design tokens (colors, fonts, radii, spacing)
-├── base.css                # Base reset & accessibility rules
-├── app.js                  # Carousel logic & smooth scrolling
-├── serve.js                # Local HTTP preview server
-├── BUSINESS_CONTEXT.md     # Business profile & precast engineering dossier
-└── README.md               # Project documentation
-```
+Result: `sloplint: clean. 0 FAIL, 0 REFLEX, 0 WARN across 1 file(s).`
